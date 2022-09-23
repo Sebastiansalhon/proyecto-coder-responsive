@@ -1,0 +1,135 @@
+/* Mobile view */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: orange;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .4s;
+}
+
+a:hover,
+a:focus {
+    background-size: 100% 2px;
+
+}
+
+header {
+    background-color: #091f2f;
+    position: sticky;
+    top: 0px;
+}
+
+h1 {
+    text-align: center;
+    background-color: #091f2f;
+    color: orange;
+    inline-size: auto;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+/* Footer */
+footer {
+    background-color: #091f2f;
+}
+
+.redes__sociales {
+    display: flex;
+    justify-content: space-evenly;
+    color: orange
+}
+
+.derechos__autor {
+    text-align: center;
+    color: orange;
+
+}
+
+/* Index */
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+    font-size: 1.13rem;
+}
+
+
+.div__center {
+    background-image: url(./assets/fondo-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.title__center {
+    color: orange;
+    font-size: 2rem;
+    display: block;
+
+}
+
+
+.span__center {
+    display: block;
+    color: black;
+}
+
+
+.flexbox__about__us {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: auto, 30%, 30%;
+    grid-template-areas:
+        "p texto"
+        "imagen imagen"
+    ;
+}
+
+.about__us__title {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.about__us__p {
+    padding-left: 4px;
+    grid-area: p;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+}
+
+.invitacion {
+    grid-area: texto;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    padding-left: 4px;
+}
+
+
+.about__us__img {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Termina el index */

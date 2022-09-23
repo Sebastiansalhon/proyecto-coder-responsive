@@ -1,0 +1,474 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: orange;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .4s;
+}
+
+a:hover, a:focus {
+    background-size: 100% 2px;
+
+}
+
+header {
+    background-color: #091f2f;
+    position: sticky;
+    top: 0px;
+}
+
+h1 {
+    text-align: center;
+    margin: 1px;
+    background-color: #091f2f;
+    text-decoration: underline;
+
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+span {
+    color: black
+}
+
+/* img {
+    max-width: 100%;
+    max-height: 100%;
+} */
+
+
+
+footer {
+    background-color: #091f2f;
+    position: sticky;
+    bottom: 0px;
+    width: 100%;
+}
+
+/* Keyframs */
+@keyframes adoption {
+    0% { background-color: white;}
+    50% { background-color: palegoldenrod;}
+    100% {background-color: white;}
+}
+
+
+/* Todos los titulos */
+.title__principal {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 2rem;
+    color: rgba(219, 156, 74, 0.788);
+}
+
+
+/* Barra de navegacion */
+.menu {
+    text-align: center;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    justify-content: space-around;
+}
+.boton__nav{
+    font-size: 1.7rem;
+}
+.boton__nav :hover{
+color: skyblue;
+
+}
+
+/* Edicion del estilo de la barra de navegacion */
+.link__nav {
+    text-decoration: none;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.link__nav a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Index */
+
+.body__index {
+    width: 100vw;
+}
+
+
+
+.flexbox__about__us {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "titulo  titulo"
+        "aboutus invitacion"
+        "imagen imagen"
+    ;
+
+}
+
+.div__center {
+    background-image: url(./assets/fondo-2.jpg);
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title__center {
+    font-family: sans-serif;
+    color: orange;
+    font-size: 3.2rem;
+}
+
+.about__us__p {
+    display: flex;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    grid-area: aboutus;
+    justify-self: center;
+
+
+}
+
+.invitacion {
+    padding: 20px;
+    display: flex;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-area: invitacion;
+    justify-self: center;
+}
+
+.about__us {
+    display: flex;
+    justify-content: start;
+    color: #0f0f0cec;
+    padding-left: 120px;
+    grid-area: titulo;
+    justify-self: center;
+}
+
+.about__us__title {
+    font-size: 2rem;
+    font-family: sans-serif;
+    text-decoration: underline;
+}
+
+.about__us__img {
+    grid-area: imagen;
+    justify-self: center;
+    align-self: center;
+
+}
+
+.p {
+    font-size: 1rem;
+}
+
+
+/* Tarjetas de animales */
+
+.body__animales {
+    background-color: rgba(113, 112, 112, 0.526);
+}
+
+.main__animalitos {
+    height: 100%;
+}
+
+.div__contenedor {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(2, 50%);
+}
+
+
+.animal {
+    border: 2px solid black;
+    border-radius: 40px;
+    display: flex;
+}
+
+.animal__tarjeta {
+    width: 40vw;
+    height: 40vh;
+    background-color: rgb(255, 255, 251);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.animal__img {
+    height: 250px;
+    width: 500px;
+    border-radius: 50px;
+    overflow: auto;
+}
+
+
+.animal__name {
+    text-align: center;
+}
+
+.animal__description {
+    text-align: center;
+}
+
+
+
+.div__principal {
+    display: flex;
+    margin-left: 10rem
+}
+
+
+
+
+/* Galeria */
+.title__galeria {
+    text-align: center;
+    font-size: 2rem;
+    font-family: sans-serif;
+    color: orange;
+    text-decoration: underline;
+}
+
+.p__galeria {
+    text-align: center;
+    font-size: 1.6rem;
+
+}
+
+.animal__img--galery {
+    border: 1px solid black;
+}
+
+.animal__img--galery:hover {
+    transition: all 0.5s ease-in-out;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    overflow: hidden;
+
+}
+
+
+.span__galeria {
+    background-color: red;
+}
+
+
+.galery__img__contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.animal__img--galery {
+    height: 200px;
+    width: 400px;
+}
+
+.responsive {
+    padding: 4px 6px;
+    float: left;
+    width: 25%;
+}
+
+.galery__vid {
+    display: flex;
+    justify-content: center;
+}
+
+/* Nuestros Animales */
+
+.title__animales {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: sans-serif;
+    color: rgb(159, 104, 0);
+    text-decoration: underline;
+}
+
+
+.contenedor {
+    display: flex;
+}
+
+
+
+
+.animal-name {
+    text-align: center;
+}
+
+
+.animal-description {
+    text-align: center;
+}
+
+
+
+
+
+
+/* Adopcion */
+.body__adopcion {
+    background-color: rgb(255, 255, 255);
+
+
+}
+
+.main__adopcion {
+    height: 95vh;
+}
+
+.title__adopt {
+    text-align: center;
+    font-size: 2rem;
+    font-family: sans-serif;
+    color: orange;
+    text-decoration: underline
+}
+
+.adopcion {
+    display: inline-block;
+    justify-content: center;
+    border: 3px solid red;
+    padding: 0px 7px;
+    border-radius: 20px;
+    background-color: white;
+    animation-name: adoption;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+
+.adopt__cont {
+    display: flex;
+    justify-content: center;
+}
+
+.input__card {
+    text-align: end;
+    padding: 15px 0px;
+}
+
+
+.input__card--gender {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+.txt__adopcion {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+}
+
+.adop__btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.btn__submit {
+    text-align: center;
+    font-size: 1rem;
+    font-family: sans-serif;
+    display: inline-block;
+    padding: 15px 25px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #ffa602;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.btn__submit:hover{
+background-color: #ab7004;
+}
+
+.btn__submit:active{
+background-color: #ab7004;
+box-shadow: 0 5px #666;
+transform: translateY(4px);
+}
+
+.btn__reset {
+    font-size: 1rem;
+    font-family: sans-serif;
+    margin-left: 0.5rem;
+}
+
+/* Contacto */
+
+
+.body__contacto {
+    background-color: rgb(240, 238, 235);
+}
+
+.main__contacto {
+    height: 95vh;
+}
+
+.title__contacto {
+    text-align: center;
+    font-size: 2rem;
+    font-family: sans-serif;
+    text-decoration: underline;
+}
+
+
+.p__contacto {
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: sans-serif;
+
+}
+
+.contacto__card {
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.text__area__contacto {
+    width: 30vw;
+    height: 30vh;
+}
+
+.btn__contacto {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0px;
+}
+
+/* Footer */
+
+
+
