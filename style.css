@@ -334,7 +334,7 @@ footer {
 
 
 .main__contacto {
-    height: 100vh;
+    height: 90vh;
 }
 
 .title__contacto {
@@ -342,19 +342,22 @@ footer {
     color: black;
     font-family: sans-serif;
     font-size: 2rem;
+    padding: 15px 0px;
 }
 
 .p__contacto {
     text-align: center;
-    padding: 5px 0px;
+    padding: 8px 0px;
     font-family: sans-serif;
     font-size: 1.3rem;
+
 }
 
 
 .contacto__card {
     display: flex;
     justify-content: center;
+    padding: 4rem 0rem;
 }
 
 .formulario__contacto {
@@ -366,6 +369,14 @@ footer {
     padding: 10px;
 }
 
+.btn__contacto {
+    display: flex;
+    justify-content: center;
+}
+.btn__submit {
+    font-size: 1.3rem;
+}
+
 
 
 
@@ -373,6 +384,35 @@ footer {
 
 
 /* Index a tamaño escritorio */
+@media (min-width: 800px) and (min-height: 840px){
+    .logo__img {
+        width: 300px;
+        height: 300px;
+    }
+    .flexbox__about__us {
+        display: grid;
+        grid-template-columns: 50%, 50%;
+        grid-template-rows: 30%,30%,30%;
+        grid-template-areas: 
+        "titulo titulo"
+        "textop imagen"
+        "invitacion imagen"
+        ;
+    }
+
+    .about__us__p {
+        grid-area: textop;
+    }
+
+    .invitacion {
+        grid-area: invitacion;
+    }
+
+    .about__us__img {
+        grid-area: imagen;
+
+    }
+}
 
 /* Animales a tamaño escritorio */
 
