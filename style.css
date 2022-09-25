@@ -373,6 +373,7 @@ footer {
     display: flex;
     justify-content: center;
 }
+
 .btn__submit {
     font-size: 1.3rem;
 }
@@ -384,40 +385,134 @@ footer {
 
 
 /* Index a tamaño escritorio */
-@media (min-width: 800px) and (min-height: 840px){
+@media (min-width: 800px) and (min-height: 840px) {
     .logo__img {
         width: 300px;
         height: 300px;
     }
+
     .flexbox__about__us {
-        display: grid;
-        grid-template-columns: 50%, 50%;
-        grid-template-rows: 30%,30%,30%;
-        grid-template-areas: 
-        "titulo titulo"
-        "textop imagen"
-        "invitacion imagen"
-        ;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
     }
 
     .about__us__p {
-        grid-area: textop;
+        display: inline;
     }
 
     .invitacion {
-        grid-area: invitacion;
+        display: inline;
     }
 
     .about__us__img {
-        grid-area: imagen;
+        display: flex;
+    }
 
+    .div__center {
+        padding-left: 10rem;
+        display: flex;
+        justify-content: left;
+    }
+
+    .title__center {
+        font-size: 3.2rem;
+    }
+
+    .link__nav {
+        font-size: 1.5rem;
+        font-family: sans-serif;
     }
 }
 
 /* Animales a tamaño escritorio */
 
+@media (min-width: 800px) and (min-height: 840px) {
+.body__animales {
+    height: 100vh;
+}
+    .animal {
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows: repeat(2, 50%);
+    }
+
+.animal__tarjeta {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+}
+
+    .animal__img {
+        width: 300px;
+    }
+
+}
+
+
+
+
+
 /* Galeria a tamaño escritorio */
 
-/* Adopcion a tamaño escritorio */
+@media (min-width: 800px) and (min-height:840px) {
+    .title__galeria {
+        text-align: center;
+        font-size: 2rem;
+        font-family: sans-serif;
+        color: orange;
+        text-decoration: underline;
+    }
 
-/* Contacto a tamaño escritorio */
+    .p__galeria {
+        text-align: center;
+        font-size: 1.6rem;
+    
+    }
+    .animal__img--galery {
+        border: 1px solid black;
+    }
+    .animal__img--galery:hover {
+        transition: all 0.5s ease-in-out;
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+        overflow: hidden;
+    }
+    .span__galeria {
+        background-color: red;
+    }
+    .galery__img__contenedor {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .animal__img--galery {
+        height: 200px;
+        width: 400px;
+    }
+
+    .responsive {
+        padding: 4px 6px;
+        float: left;
+        width: 25%;
+    }
+
+    .videos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .galery__vid {
+        width: 1000px;
+        align-self: center;
+    }
+
+
+
+}
+
+
+/* Adopcion a tamaño escritorio */
