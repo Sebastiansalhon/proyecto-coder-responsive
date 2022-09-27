@@ -110,12 +110,9 @@ footer {
 
 
 .flexbox__about__us {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: auto, 30%;
-    grid-template-areas:
-        "p p"
-        "texto texto"
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     ;
 }
 
@@ -252,11 +249,13 @@ footer {
 }
 
 .txt__adopcion {
+    display: flex;
     text-align: center;
     font-family: sans-serif;
     height: 30vh;
-    padding-top: 8vh;
     font-size: 1.3rem;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .adopt__cont {
@@ -386,6 +385,10 @@ footer {
 
 /* Index a tamaño escritorio */
 @media (min-width: 800px) and (min-height: 840px) {
+    .main__index {
+        height: 100vh;
+    }
+    
     .logo__img {
         width: 300px;
         height: 300px;
@@ -393,16 +396,24 @@ footer {
 
     .flexbox__about__us {
         display: flex;
-        flex-direction: column;
-        justify-content: left;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .about__us__title {
+        font-size: 3rem;
+        font-family: sans-serif;
     }
 
     .about__us__p {
         display: inline;
+        font-size: 1.6rem;
     }
 
     .invitacion {
         display: inline;
+        font-size: 1.6rem;
     }
 
     .about__us__img {
@@ -428,24 +439,37 @@ footer {
 /* Animales a tamaño escritorio */
 
 @media (min-width: 800px) and (min-height: 840px) {
-.body__animales {
-    height: 100vh;
-}
-    .animal {
-        height: auto;
-        display: grid;
-        grid-template-columns: repeat(3, 33%);
-        grid-template-rows: repeat(2, 50%);
+
+    .main__animalitos {
+        height: 100vh;
     }
 
-.animal__tarjeta {
-    display: flex;
-    justify-content: center;
-    width: 300px;
-}
+    .div__contenedor {
+        display: grid;
+        grid-template-columns: repeat(3, 30%);
+        justify-content: space-evenly;
+    }
+
+    .animal__tarjeta {
+        display: flex;
+        border: 2px solid black;
+        border-radius: 15px;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+    }
 
     .animal__img {
+        height: 200px;
         width: 300px;
+    }
+
+    .descripcion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
     }
 
 }
