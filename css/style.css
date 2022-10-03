@@ -78,11 +78,15 @@ footer {
 
 /* Index */
 
+
+.body__index {
+    width: 100vw;
+}
 .menu {
     display: flex;
     justify-content: space-evenly;
     font-family: sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 
@@ -378,11 +382,30 @@ footer {
     background-image: url(../assets/pata-y-mano.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    height: 50vh;
+    background-position:center ;
+    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.colab__text {
+    font-weight: 700;
+    font-family: sans-serif;
+
+}
+
+.suministros {
+    margin: 10px;
+}
+
+.accesorios {
+    margin: 10px;
+
+}
+
+.racion {
+    margin: 10px;
 }
 
 
