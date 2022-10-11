@@ -14,17 +14,38 @@
 <body class="body__index">
     <!-- Empieza Encabezado -->
     <header>
-        <h1 class="title__principal">Centro de Adopción Responsable</h1>
         <div>
-            <nav class="nav__web">
-                <ul class="menu">
-                    <li class="boton__nav"><a class="link__nav" href="./index.html">Inicio</a></li>
-                    <!-- <li class="boton__nav"><a class="link__nav" href="./pages/animalitos.html">Animales</a></li> -->
-                    <li class="boton__nav"><a class="link__nav" href="./pages/galeria.html">Galería</a></li>
-                    <li class="boton__nav"><a class="link__nav" href="./pages/adopcion.html">Adopción</a></li>
-                    <li class="boton__nav"><a class="link__nav" href="./pages/contacto.html">Contacto</a></li>
-                    <li class="boton__nav"><a class="link__nav" href="./pages/colaboracion.html">Colaboraciones</a></li>
-                </ul>
+            <nav class="navbar fixed-top bg-color nav__principal">
+                <div class="container-fluid">
+                    <a class="navbar-brand letra" href="index.html">Inicio</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header bg-color letra">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Centro de adopción Responsable</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body bg-color">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="pages/galeria.html">Galería</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/colaboracion.html">Colaboraciones</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/adopcion.html">Adopción</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>

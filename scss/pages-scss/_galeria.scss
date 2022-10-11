@@ -1,0 +1,97 @@
+.title__galeria {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    color: black;
+
+}
+
+.p__galeria {
+    text-align: center;
+    font-family: sans-serif;
+
+}
+
+.div__galery__vid {
+    height: 15%;
+}
+
+.animal__img--galery {
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+
+.responsive {
+    padding: 5px;
+    float: center;
+}
+
+.videos {
+    padding: 5px;
+}
+
+
+@media (min-width: 800px) and (min-height:840px) {
+    .title__galeria {
+        text-align: center;
+        font-size: 2rem;
+        font-family: sans-serif;
+        color: orange;
+        text-decoration: underline;
+    }
+
+    .p__galeria {
+        text-align: center;
+        font-size: 1.6rem;
+
+    }
+
+    .animal__img--galery {
+        border: 1px solid black;
+        height: 300px;
+    }
+
+    .animal__img--galery:hover {
+        transition: all 0.5s ease-in-out;
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+        overflow: hidden;
+    }
+
+    .span__galeria {
+        background-color: red;
+    }
+
+    .galery__img__contenedor {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .animal__img--galery {
+        height: 200px;
+        width: 400px;
+    }
+
+    .responsive {
+        padding: 4px 6px;
+        float: left;
+        width: 25%;
+    }
+
+    .videos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .galery__vid {
+        width: 1000px;
+        align-self: center;
+    }
+
+
+
+}

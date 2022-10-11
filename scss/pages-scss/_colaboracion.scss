@@ -1,0 +1,82 @@
+.colab__title {
+    background-image: url(../assets/pata-y-mano.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colab__text {
+    font-weight: 700;
+    font-family: sans-serif;
+
+}
+
+.suministros {
+    margin: 10px;
+}
+
+.accesorios {
+    margin: 10px;
+
+}
+
+.racion {
+    margin: 10px;
+}
+
+@media (min-width: 800px) and (min-height: 840px){
+
+    .colab__text {
+        font-size: 1.7rem;
+        padding: 0px 1fr;
+    }
+    .colab__title {
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 30vh;
+    }
+
+    .sum__med {
+        display: flex;
+        align-items: center;
+    }
+
+    .sum__med-li{
+        text-align: center;
+        font-size: 1.4rem;
+    }
+
+    .racion__text {
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 1.2rem;
+        font-weight: 600;
+
+    }
+
+    .ul__racion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: 500;
+        font-size: 1.13rem;
+
+    }
+    .body__colab {
+        padding-bottom: 100px;
+    }
+
+    .div__colab__end {
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+}
+
+

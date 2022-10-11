@@ -13,16 +13,37 @@
 
 <body class="body__colab">
     <header>
-        <h1 class="title__principal">Colaboraciones</h1>
-        <nav class="nav__web">
-            <ul class="menu">
-                <li class="boton__nav"><a class="link__nav" href="../index.html">Inicio</a></li>
-                <!-- <li class="boton__nav"><a class="link__nav" href="./animalitos.html">Animales</a></li> -->
-                <li class="boton__nav"><a class="link__nav" href="./galeria.html">Galería</a></li>
-                <li class="boton__nav"><a class="link__nav" href="./adopcion.html">Adopción</a></li>
-                <li class="boton__nav"><a class="link__nav" href="./contacto.html">Contacto</a></li>
-                <li class="boton__nav"><a class="link__nav" href="./colaboracion.html">Colaboraciones</a></li>
-            </ul>
+        <nav class="navbar fixed-top bg-color">
+            <div class="container-fluid">
+                <a class="navbar-brand letra" href="colaboracion.html">Colaboraciones</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header bg-color letra">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Centro de adopción Responsable</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body bg-color menu__desplegable">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="galeria.html">Galería</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="adopcion.html">Adopción</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -39,33 +60,33 @@
         <div class="suministros">
             <h3 class="text-center">Suministros Médicos</h3>
             <ul class="list-group list-group-horizontal pb-2 sum__med container">
-                <li class="list-group-item flex-fill bg-color c-letra sum__med-li">Jeringas</li>
-                <li class="list-group-item flex-fill bg-color c-letra sum__med-li">Gasas</li>
-                <li class="list-group-item flex-fill bg-color c-letra sum__med-li">Amoxidal</li>
+                <li class="list-group-item flex-fill bg-color letra sum__med-li">Jeringas</li>
+                <li class="list-group-item flex-fill bg-color letra sum__med-li">Gasas</li>
+                <li class="list-group-item flex-fill bg-color letra sum__med-li">Amoxidal</li>
             </ul>
             <ul class="list-group list-group-horizontal pb-2 sum__med container">
-                <li class="list-group-item flex-fill bg-color c-letra sum__med-li">Agujas Rosadas</li>
-                <li class="list-group-item flex-fill bg-color c-letra sum__med-li">Morfina</li>
-                <li class="list-group-item flex-fill bg-color c-letra sum__med-li">Agua oxigenada</li>
+                <li class="list-group-item flex-fill bg-color letra sum__med-li">Agujas Rosadas</li>
+                <li class="list-group-item flex-fill bg-color letra sum__med-li">Morfina</li>
+                <li class="list-group-item flex-fill bg-color letra sum__med-li">Agua oxigenada</li>
             </ul>
             <ul class="list-group list-group-horizontal pb-2 sum__med container">
-                <li class="list-group-item flex-fill bg-color c-letra sum__med-li">Suero fisiológico</li>
-                <li class="list-group-item flex-fill bg-color c-letra sum__med-li">Espadol</li>
-                <li class="list-group-item flex-fill bg-color c-letra sum__med-li">Guantes de cirugía</li>
+                <li class="list-group-item flex-fill bg-color letra sum__med-li">Suero fisiológico</li>
+                <li class="list-group-item flex-fill bg-color letra sum__med-li">Espadol</li>
+                <li class="list-group-item flex-fill bg-color letra sum__med-li">Guantes de cirugía</li>
             </ul>
         </div>
         <div class="accesorios">
             <h3 class="text-center">Accesorios para Aniamles</h3>
 
             <ul class="list-group list-group-horizontal pb-2 acc__animales container">
-                <li class="list-group-item flex-fill bg-color c-letra sum__med-li">Collares</li>
-                <li class="list-group-item flex-fill bg-color c-letra sum__med-li">Cuchas</li>
-                <li class="list-group-item flex-fill bg-color c-letra sum__med-li">Abrigos</li>
+                <li class="list-group-item flex-fill bg-color letra sum__med-li">Collares</li>
+                <li class="list-group-item flex-fill bg-color letra sum__med-li">Cuchas</li>
+                <li class="list-group-item flex-fill bg-color letra sum__med-li">Abrigos</li>
             </ul>
             <ul class="list-group list-group-horizontal pb-2 acc__animales container">
-                <li class="list-group-item flex-fill bg-color c-letra sum__med-li">Cepillos</li>
-                <li class="list-group-item flex-fill bg-color c-letra sum__med-li">Juguetes</li>
-                <li class="list-group-item flex-fill bg-color c-letra sum__med-li">Collares</li>
+                <li class="list-group-item flex-fill bg-color letra sum__med-li">Cepillos</li>
+                <li class="list-group-item flex-fill bg-color letra sum__med-li">Juguetes</li>
+                <li class="list-group-item flex-fill bg-color letra sum__med-li">Collares</li>
             </ul>
         </div>
         <div class="racion">
@@ -102,6 +123,9 @@
             <span> Derechos Reservados 2022 © </span>
         </div>
     </footer>
+
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

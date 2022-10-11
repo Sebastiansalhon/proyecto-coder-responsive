@@ -1,0 +1,67 @@
+.main__adopcion {
+    height: 100vh;
+}
+
+
+.title__adopcion {
+    text-align: center;
+    color: black;
+    font-family: sans-serif;
+}
+
+.txt__adopcion {
+    display: flex;
+    text-align: center;
+    font-family: sans-serif;
+    height: 30vh;
+    font-size: 1.3rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.adopt__cont {
+    display: flex;
+    justify-content: center;
+}
+
+.adopcion {
+    display: inline-block;
+    justify-content: center;
+    border: 3px solid red;
+    padding: 0px 7px;
+    border-radius: 20px;
+    background-color: white;
+    animation-name: adoption;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    height: 22rem;
+    padding-top: 3vh;
+}
+
+@keyframes adoption {
+    0% {
+        background-color: white;
+    }
+
+    50% {
+        background-color: orange;
+    }
+
+    100% {
+        background-color: white;
+    }
+}
+
+.input__card--gender {
+    text-align: center;
+}
+
+.input__card {
+    text-align: end;
+}
+
+.adop__btn {
+    text-align: center;
+    padding-top: 5px;
+}
+

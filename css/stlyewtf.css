@@ -89,11 +89,6 @@
   margin: 10px;
 }
 
-.sum__med {
-  position: static;
-  z-index: -5;
-}
-
 @media (min-width: 800px) and (min-height: 840px) {
   .colab__text {
     font-size: 1.7rem;
@@ -135,6 +130,10 @@
     font-weight: 600;
   }
 }
+.bg-color {
+  background-color: #091f2f;
+}
+
 .main__contacto {
   height: 90vh;
 }
@@ -462,16 +461,16 @@ a:focus {
   background-size: 100% 2px;
 }
 
-.letra {
+.c-letra {
   color: orange;
 }
 
 .bg-color {
-  background-color: #1c689e;
+  background-color: #091f2f;
 }
 
 body {
   background-color: rgb(255, 255, 255);
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=stlye.css.map */

@@ -1,0 +1,16 @@
+.footer__div {
+    background-color: #091f2f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 800px) { 
+    .footer__div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
