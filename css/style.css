@@ -83,8 +83,27 @@ h1 {
   background-color: #1c689e;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer__span {
+  padding-left: 2%;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  color: orange;
+}
+
+.redes__sociales {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  color: orange;
+}
+
+footer div span {
+  color: orange;
+  font-family: sans-serif;
+  font-size: 1.5rem;
 }
 
 @media (min-width: 800px) {
@@ -117,6 +136,10 @@ h1 {
 .adopt__cont {
   display: flex;
   justify-content: center;
+}
+
+.input__card {
+  padding-bottom: 10px;
 }
 
 .adopcion {
@@ -175,6 +198,10 @@ h1 {
 
 .letra:hover {
   color: withe;
+}
+
+.sum__med-li {
+  position: static;
 }
 
 @media (min-width: 800px) and (min-height: 840px) {
