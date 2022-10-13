@@ -1,8 +1,4 @@
 .colab__title {
-    background-image: url(../assets/pata-y-mano.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     height: 30vh;
     display: flex;
     justify-content: center;
@@ -15,18 +11,16 @@
 
 }
 
-.suministros {
-    margin: 10px;
-}
-
-.accesorios {
-    margin: 10px;
-
-}
 
 .racion {
     margin: 10px;
 }
+
+.letra:hover {
+    color: withe;
+}
+
+
 
 @media (min-width: 800px) and (min-height: 840px){
 
