@@ -1,5 +1,5 @@
 header {
-    background-color: #091f2f;
+    background-color: $color-fondo;
     position: sticky;
     top: 0px;
 }
@@ -7,7 +7,7 @@ header {
 
 h1 {
     text-align: center;
-    background-color: #091f2f;
+    background-color: $color-fondo;
     color: orange;
     inline-size: auto;
 }
