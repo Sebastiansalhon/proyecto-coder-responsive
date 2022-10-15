@@ -122,12 +122,19 @@
         text-align: center;
     }
 
-}
-
-
-
-@media (min-width: 900px) {
-    .body__index {
-        padding-bottom: 300px;
+    .about__us {
+        padding-right: 50px;
+        padding-left: 50px;
+        padding-bottom: 70px;
     }
+
+    
 }
+
+
+
+// @media (min-width: 900px) {
+//     .body__index {
+//         padding-bottom: 300px;
+//     }
+// }

@@ -477,9 +477,7 @@ footer div span {
     text-align: center;
   }
   .about__us {
-    padding-right: 50px;
-    padding-left: 50px;
-    padding-bottom: 70px;
+    padding: 0px 100px;
   }
 }
 ul {
@@ -512,4 +510,4 @@ a:focus {
   background-size: 100% 2px;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=stlye.map */
