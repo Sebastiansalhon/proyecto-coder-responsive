@@ -83,8 +83,7 @@ h1 {
   background-color: #1c689e;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .footer__span {
@@ -94,10 +93,19 @@ h1 {
   color: orange;
 }
 
+.redes__div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .redes__sociales {
   font-family: sans-serif;
   font-size: 1.5rem;
   color: orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 footer div span {
