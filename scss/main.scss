@@ -1,4 +1,8 @@
+@import "componentes/fuentes";
+
 @import "componentes/variables";
+
+@import "componentes/mixin";
 
 @import "componentes/otros";
 
@@ -10,17 +14,23 @@
 
 @import "layout/footer";
 
-@import "pages-scss/adopcion";
-
-@import "pages-scss/colaboracion";
-
-@import "pages-scss/contacto";
-
-@import "pages-scss/galeria";
+@import "componentes/navbar";
 
 @import "pages-scss/index"; 
 
-@import "componentes/navbar";
+@import "pages-scss/galeria";
+
+@import "pages-scss/colaboracion";
+
+@import "pages-scss/adopcion";
+
+@import "pages-scss/contacto";
+
+
+
+
+
+
 
 
 

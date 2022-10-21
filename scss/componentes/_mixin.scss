@@ -1,0 +1,9 @@
+@mixin h1gen {
+    text-align: center;
+    font-family: $fuente-titulo;
+    color: $letras;
+    text-transform: uppercase;
+    padding-top: 12px;
+    font-size: 3rem;
+}
+

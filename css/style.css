@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -72,13 +74,6 @@ header {
   top: 0px;
 }
 
-h1 {
-  text-align: center;
-  background-color: #1c689e;
-  color: orange;
-  inline-size: auto;
-}
-
 .footer__div {
   background-color: #1c689e;
   display: flex;
@@ -121,257 +116,44 @@ footer div span {
     justify-content: space-between;
   }
 }
-.main__adopcion {
-  height: 100vh;
+ul {
+  margin-bottom: 0rem;
+  padding-left: 0rem;
+}
+ul li {
+  list-style: none;
 }
 
-.title__adopcion {
-  text-align: center;
-  color: black;
-  font-family: sans-serif;
-}
-
-.txt__adopcion {
+.menu {
   display: flex;
-  text-align: center;
-  font-family: sans-serif;
-  height: 30vh;
-  font-size: 1.3rem;
-  flex-direction: column;
   justify-content: space-evenly;
-}
-
-.adopt__cont {
-  display: flex;
-  justify-content: center;
-}
-
-.input__card {
-  padding-bottom: 10px;
-}
-
-.adopcion {
-  display: inline-block;
-  justify-content: center;
-  border: 3px solid red;
-  padding: 0px 7px;
-  border-radius: 20px;
-  background-color: white;
-  animation-name: adoption;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  height: 22rem;
-  padding-top: 3vh;
-}
-
-@keyframes adoption {
-  0% {
-    background-color: white;
-  }
-  50% {
-    background-color: orange;
-  }
-  100% {
-    background-color: white;
-  }
-}
-.input__card--gender {
-  text-align: center;
-}
-
-.input__card {
-  text-align: end;
-}
-
-.adop__btn {
-  text-align: center;
-  padding-top: 5px;
-}
-
-.colab__title {
-  height: 30vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.colab__text {
-  font-weight: 700;
   font-family: sans-serif;
+  font-size: 1rem;
 }
 
-.racion {
-  margin: 10px;
+a {
+  text-decoration: none;
+  color: orange;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.4s;
 }
 
-.letra:hover {
-  color: withe;
+a:hover,
+a:focus {
+  background-size: 100% 2px;
 }
 
-.sum__med-li {
-  position: static;
+h1, h1 span {
+  font-family: "Josefin Sans", sans-serif;
 }
 
-@media (min-width: 800px) and (min-height: 840px) {
-  .colab__text {
-    font-size: 1.7rem;
-    padding: 0px 1fr;
-  }
-  .colab__title {
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-    height: 30vh;
-  }
-  .sum__med {
-    display: flex;
-    align-items: center;
-  }
-  .sum__med-li {
-    text-align: center;
-    font-size: 1.4rem;
-  }
-  .racion__text {
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 1.2rem;
-    font-weight: 600;
-  }
-  .ul__racion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-weight: 500;
-    font-size: 1.13rem;
-  }
-  .body__colab {
-    padding-bottom: 100px;
-  }
-  .div__colab__end {
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: 600;
-  }
-}
-.main__contacto {
-  height: 90vh;
+div p {
+  font-family: "Comfortaa", cursive;
 }
 
-.title__contacto {
-  text-align: center;
-  color: black;
-  font-family: sans-serif;
-  font-size: 2rem;
-  padding: 15px 0px;
-}
-
-.p__contacto {
-  text-align: center;
-  padding: 8px 0px;
-  font-family: sans-serif;
-  font-size: 1.3rem;
-}
-
-.contacto__card {
-  display: flex;
-  justify-content: center;
-  padding: 4rem 0rem;
-}
-
-.formulario__contacto {
-  display: flex;
-  flex-direction: column;
-  align-items: ceter;
-  row-gap: 10px;
-  border: 2px solid black;
-  padding: 10px;
-}
-
-.btn__contacto {
-  display: flex;
-  justify-content: center;
-}
-
-.title__galeria {
-  text-align: center;
-  font-family: sans-serif;
-  font-size: 1.5rem;
-  color: black;
-}
-
-.p__galeria {
-  text-align: center;
-  font-family: sans-serif;
-}
-
-.div__galery__vid {
-  height: 15%;
-}
-
-.animal__img--galery {
-  border: 1px solid black;
-  overflow: hidden;
-}
-
-.responsive {
-  padding: 5px;
-  float: center;
-}
-
-.videos {
-  padding: 5px;
-}
-
-@media (min-width: 800px) and (min-height: 840px) {
-  .title__galeria {
-    text-align: center;
-    font-size: 2rem;
-    font-family: sans-serif;
-    color: orange;
-    text-decoration: underline;
-  }
-  .p__galeria {
-    text-align: center;
-    font-size: 1.6rem;
-  }
-  .animal__img--galery {
-    border: 1px solid black;
-    height: 300px;
-  }
-  .animal__img--galery:hover {
-    transition: all 0.5s ease-in-out;
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
-    overflow: hidden;
-  }
-  .span__galeria {
-    background-color: red;
-  }
-  .galery__img__contenedor {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .animal__img--galery {
-    height: 200px;
-    width: 400px;
-  }
-  .responsive {
-    padding: 4px 6px;
-    float: left;
-    width: 25%;
-  }
-  .videos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-  }
-  .galery__vid {
-    width: 1000px;
-    align-self: center;
-  }
-}
 .body__index {
   width: 100vw;
 }
@@ -490,34 +272,283 @@ footer div span {
     padding-bottom: 70px;
   }
 }
-ul {
-  margin-bottom: 0rem;
-  padding-left: 0rem;
-}
-ul li {
-  list-style: none;
-}
-
-.menu {
-  display: flex;
-  justify-content: space-evenly;
-  font-family: sans-serif;
-  font-size: 1rem;
-}
-
-a {
-  text-decoration: none;
+.titulo__generico {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
   color: orange;
-  background-image: linear-gradient(currentColor, currentColor);
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
-  background-size: 0% 2px;
-  transition: background-size 0.4s;
+  text-transform: uppercase;
+  padding-top: 12px;
+  font-size: 3rem;
 }
 
-a:hover,
-a:focus {
-  background-size: 100% 2px;
+.title__galeria {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.p__galeria {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.div__galery__vid {
+  height: 15%;
+}
+
+.animal__img--galery {
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+.responsive {
+  padding: 5px;
+  float: center;
+}
+
+.videos {
+  padding: 5px;
+}
+
+@media (min-width: 800px) and (min-height: 840px) {
+  .titulo__generico {
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    color: orange;
+    text-transform: uppercase;
+    padding-top: 12px;
+    font-size: 3rem;
+  }
+  .title__galeria {
+    text-align: center;
+    font-size: 2rem;
+    font-family: sans-serif;
+    color: orange;
+    text-decoration: underline;
+  }
+  .p__galeria {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  .animal__img--galery {
+    border: 1px solid black;
+    height: 300px;
+  }
+  .animal__img--galery:hover {
+    transition: all 0.5s ease-in-out;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    overflow: hidden;
+  }
+  .span__galeria {
+    background-color: red;
+  }
+  .galery__img__contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .animal__img--galery {
+    height: 200px;
+    width: 400px;
+  }
+  .responsive {
+    padding: 4px 6px;
+    float: left;
+    width: 25%;
+  }
+  .videos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: 50vw;
+    padding-bottom: 10%;
+  }
+  .galery__vid {
+    align-self: center;
+  }
+}
+div > span {
+  font-family: "Comfortaa", cursive;
+}
+
+.colab__title {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.colab__text {
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+.racion {
+  margin: 10px;
+}
+
+.letra:hover {
+  color: withe;
+}
+
+.sum__med-li {
+  position: static;
+}
+
+@media (min-width: 800px) and (min-height: 840px) {
+  .colab__text {
+    font-size: 1.7rem;
+    padding: 0px 1fr;
+  }
+  .colab__title {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 30vh;
+  }
+  .sum__med {
+    display: flex;
+    align-items: center;
+  }
+  .sum__med-li {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .racion__text {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .ul__racion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.13rem;
+  }
+  .body__colab {
+    padding-bottom: 100px;
+  }
+  .div__colab__end {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+}
+.main__adopcion {
+  height: 100vh;
+}
+
+.title__adopcion {
+  text-align: center;
+  color: black;
+  font-family: sans-serif;
+}
+
+.txt__adopcion {
+  display: flex;
+  text-align: center;
+  font-family: sans-serif;
+  height: 30vh;
+  font-size: 1.3rem;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.adopt__cont {
+  display: flex;
+  justify-content: center;
+}
+
+.input__card {
+  padding-bottom: 10px;
+}
+
+.adopcion {
+  display: inline-block;
+  justify-content: center;
+  border: 3px solid red;
+  padding: 0px 7px;
+  border-radius: 20px;
+  background-color: white;
+  animation-name: adoption;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  height: 22rem;
+  padding-top: 2vh;
+}
+
+.formulario__adopcion {
+  padding-bottom: 30px;
+}
+
+@keyframes adoption {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: orange;
+  }
+  100% {
+    background-color: white;
+  }
+}
+.input__card--gender {
+  text-align: center;
+}
+
+.input__card {
+  text-align: end;
+}
+
+.adop__btn {
+  text-align: center;
+  padding-top: 5px;
+}
+
+.main__contacto {
+  height: 90vh;
+}
+
+.title__contacto {
+  text-align: center;
+  color: black;
+  font-family: sans-serif;
+  font-size: 2rem;
+  padding: 15px 0px;
+}
+
+.p__contacto {
+  text-align: center;
+  padding: 8px 0px;
+  font-family: "Comfortaa", cursive;
+  font-size: 1.3rem;
+}
+
+.contacto__card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 4rem 0rem;
+}
+
+.formulario__contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: ceter;
+  row-gap: 10px;
+  border: 2px solid black;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+.btn__contacto {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

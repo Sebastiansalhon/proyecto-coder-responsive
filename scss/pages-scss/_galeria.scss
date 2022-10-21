@@ -1,3 +1,8 @@
+.titulo__generico{
+    @include h1gen;
+}
+
+
 .title__galeria {
     text-align: center;
     font-family: sans-serif;
@@ -33,6 +38,10 @@
 
 
 @media (min-width: 800px) and (min-height:840px) {
+    .titulo__generico{
+        @include h1gen;
+    }
+    
     .title__galeria {
         text-align: center;
         font-size: 2rem;
@@ -82,13 +91,15 @@
 
     .videos {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-content: center;
+        width: 50vw;
+        padding-bottom: 10%;
+
     }
 
     .galery__vid {
-        width: 1000px;
         align-self: center;
     }
 

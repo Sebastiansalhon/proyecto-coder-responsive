@@ -1,3 +1,7 @@
+div > span {
+    font-family: $fuente-parrafo;
+}
+
 .colab__title {
     height: 30vh;
     display: flex;
@@ -23,6 +27,7 @@
 .sum__med-li{
     position: static;
 }
+
 
 @media (min-width: 800px) and (min-height: 840px){
 

@@ -37,7 +37,10 @@
     animation-duration: 10s;
     animation-iteration-count: infinite;
     height: 22rem;
-    padding-top: 3vh;
+    padding-top: 2vh;
+}
+.formulario__adopcion {
+    padding-bottom: 30px;
 }
 
 @keyframes adoption {
@@ -66,4 +69,5 @@
     text-align: center;
     padding-top: 5px;
 }
+
 

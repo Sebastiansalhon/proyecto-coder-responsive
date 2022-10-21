@@ -1,3 +1,11 @@
+h1, h1 span {
+    font-family: $fuente-titulo;
+}
+
+div p {
+    font-family: $fuente-parrafo;
+}
+
 .body__index {
     width: 100vw;
 }
@@ -131,10 +139,3 @@
     
 }
 
-
-
-// @media (min-width: 900px) {
-//     .body__index {
-//         padding-bottom: 300px;
-//     }
-// }
