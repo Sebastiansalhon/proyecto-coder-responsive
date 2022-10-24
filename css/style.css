@@ -511,7 +511,7 @@ div > span {
 }
 
 .main__contacto {
-  height: 90vh;
+  height: 111vh;
 }
 
 .title__contacto {
@@ -549,6 +549,44 @@ div > span {
 .btn__contacto {
   display: flex;
   justify-content: center;
+}
+
+.ubicacion {
+  text-align: center;
+  font-family: "Comfortaa", cursive;
+}
+
+.titulo__ubicacion {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: orange;
+}
+
+header a {
+  text-decoration: none;
+}
+
+.info {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  color: orange;
+  text-transform: uppercase;
+  padding-top: 12px;
+  font-size: 3rem;
+  text-decoration: underline;
+}
+
+.info__direccion {
+  display: block;
+  text-align: center;
+  margin-bottom: 15px;
+  font-family: "Comfortaa", cursive;
+}
+
+span a {
+  text-decoration: none;
+  color: orange;
 }
 
 /*# sourceMappingURL=style.css.map */

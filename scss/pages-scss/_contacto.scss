@@ -1,5 +1,5 @@
 .main__contacto {
-    height: 90vh;
+    height: 111vh;
 }
 
 .title__contacto {
@@ -38,4 +38,9 @@
 .btn__contacto {
     display: flex;
     justify-content: center;
+}
+
+.ubicacion {
+    text-align: center;
+    font-family: $fuente-parrafo;
 }
